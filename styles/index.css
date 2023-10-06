@@ -1,0 +1,273 @@
+@import @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid silver;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: #000;
+    letter-spacing: 0.1px;
+}
+
+button {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 0px solid #ccc;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+/*start*/
+main {
+    position: relative;
+    height: 900px;
+    background: url(/images/Augustana.jpg), no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-weight: bold;
+    opacity:0.8;
+    color:gold;
+}
+
+    main header {
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        line-height: 5rem;
+    }
+
+        main header div:nth-child(1) {
+            font-size: 20px;
+        }
+
+        main header div:nth-child(2) {
+            font-size: 70px;
+            line-height: 4rem;
+        }
+
+    main button:hover {
+        background: #999;
+        cursor: pointer;
+    }
+
+.aa {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+    .aa h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+.intro-para {
+    margin-bottom: 20px;
+}
+
+.aa p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.aa ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aa li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aa a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .aa a:hover {
+        background-color: #0056b3;
+    }
+
+
+.bb {
+    width: 100%;
+    background: #F6C007;
+    height: 200px;
+}
+
+    .bb div {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 90px 0;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        color: darkblue;
+    }
+
+div h2 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.cc {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+    .cc img {
+        width: 310px;
+        height: 200px;
+    }
+
+    .cc section {
+        width: 1000px;
+        background: #F6C007;
+        margin: 10px;
+    }
+
+    .cc h3 {
+        padding: 15px;
+    }
+
+    .cc p {
+        color: #fff;
+        padding: 15px;
+    }
+
+.dd {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+    .dd img {
+        width: 230px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+        .dd img:hover {
+            filter: grayscale(100%);
+        }
+
+    .dd section {
+        display: flex;
+    }
+
+.ee {
+    background: #F6C007;
+    width: 100%;
+    height: 310px;
+}
+
+    .ee div {
+        width: 1000px;
+        line-height: 5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .ee p {
+        color: #fff;
+    }
+
+    .ee div:nth-child(2) {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .ee button {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        .ee button:hover {
+            background: #999;
+            cursor: pointer;
+        }
+
+.ff {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+    .ff div {
+        display: flex;
+    }
+
+    .ff h3 {
+        position: relative;
+    }
+
+.hh {
+    color: #F6C007;
+    z-index: -1;
+    font-size: 4em;
+    font-weight: bold;
+    position: absolute;
+}
+
+.why-section{
+    margin: 20px;
+}
+
+.contact-us{
+    text-align:center;
+}
+
+#footer {
+    text-align: center;
+    background: gold;
+    padding: 10px 0;
+    color: darkblue;
+    font-weight: 700;
+}
