@@ -51,7 +51,7 @@ p {
 /*start*/
 main {
     position: relative;
-    height: 900px;
+    height: 100vh;
     background: url(/images/pencils.jpg), no-repeat;
     background-size: cover;
     background-position: center center;
@@ -729,4 +729,5 @@ label {
 .lblform{
     margin:10px 0px 10px -20px;
 }
+
 
