@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles/index.css">
+    <link href="scripts/carousel.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -18,113 +23,178 @@
                 Global
             </div>
             <button>Take the first Step</button>
-
         </header>
     </main>
 
-    <article class=aa>
+    <section class="container aa">
         <div>
-            <h2>Discovering Quality Education: A Journey Worth Investing</h2>
+            <h2>What can we do for you?</h2>
         </div>
         <div class="intro-para">
-            <p>At our institution, we understand the value of quality education and acknowledge that it is neither readily available nor affordable for everyone. That's why we are committed to providing an exceptional educational experience for all.</p>
-            <ul>
-                <li>🌟 Expert educators dedicated to your success</li>
-                <li>📚 Expert Essay writers</li>
-                <li>💡 Meetings with Alums</li>
-                <li>🎓 A diverse community fostering growth and collaboration</li>
-            </ul>
+            <p>
+                We make applying for universities and colleges in the US much easier. Our priority is to connect you with opportunities through our experienced counselors, our extensive alumni network and our physical presence in different US states.
+                HigherEd Global will uncover numerous possibilities and will offer you a top-notch experience.
+            </p>
             <p>Choose us because we believe in nurturing talents, empowering minds, and shaping futures. With Sama Jee leading the way, our commitment to excellence knows no bounds.</p>
         </div>
+    </section>
+
+    <div>
+        <h2>Services Offered</h2>
+    </div>
+
+    <section class="services-section">
+        <div class="service">
+            <h3>Meet with Us</h3>
+            <span class="service-description">1-on-1 counselor consultations includes discussing career choices and undergraduate programs. A tailored experience for you.</span>
+        </div>
+        <div class="service">
+            <h3>Opportunity</h3>
+            <span class="service-description">Our team will present you a list of options from universities that best match your preferences, capabilities, and your finances.</span>
+        </div>
+        <div class="service">
+            <h3>Application Support</h3>
+            <span class="service-description">All of the applications are processed through us, personally. No hassles with admission questions, visas & documentation, and fees.</span>
+        </div>
+        <div class="service">
+            <h3>Preparation</h3>
+            <span class="service-description">Prerequisite preparations in TOELF, IELTS, SAT, PTE, etc, in order for a seamless transition to a transformative academic system.</span>
+        </div>
+        <div class="service">
+            <h3>Acceptance</h3>
+            <span class="service-description">Letter of acceptance based on university criteria. We talk through best suitable options, and prepare you for your new home abroad.</span>
+        </div>
+        <div class="service">
+            <h3>Webinar</h3>
+            <span class="service-description">Timmi to add (this should be a brief description)</span>
+        </div>
+    </section>
+
+
+
+    <section class="section grey">
         <div>
-            <p>Ready to embark on your educational journey?</p>
-            <a href="#learn-more-section">Learn More...</a>
+            <h2>How does it actually work?</h2>
         </div>
 
-    </article>
-    <article class=bb>
-        <div>This is  a Template, make edits and send them over</div>
-    </article>
+        <svg xmlns="http://www.w3.org/2000/svg" class="process js-animate" width="960" height="120" viewBox="0 0 960 120">
+            <g opacity="0.8">
+                <polygon class="design" fill="#F57A73" points="0,120 144,101 298,36 355,43 403,25 480,72 780,120" />
+                <polygon class="discover" fill="#50B1AA" points="0,120 67,47 144,75 261,79 297,107 469,120" />
+                <polygon class="implement" fill="#FFB566" points="345,120 385,105 508,29 558,68 614,88 692,89 835,120" />
+                <polygon class="deliver" fill="#60666A" points="577,120 788,29 898,60 960,120" />
+                <polygon class="develop" fill="#43C0E6" points="393,120 538,85 624,14 681,25 788,87 922,120" />
+            </g>
+        </svg>
+        <div class="process-details">
+            <div class="discover">
+                <div class="heading">DISCOVER</div>
+                <p>Develop a thorough understanding of the project, audience, and objectives to formulate a digital strategy.</p>
+            </div>
+            <div class="design">
+                <div class="heading">DESIGN</div>
+                <p>Craft a purposeful design to reflect the objectives and indicate the direction for the entire project.</p>
+            </div>
+            <div class="implement">
+                <div class="heading">IMPLEMENT</div>
+                <p>Bring the design to life in the form of an interactive and functional prototype. Review, refine and optimise.</p>
+            </div>
+            <div class="develop">
+                <div class="heading">DEVELOP</div>
+                <p>Incorporate implementation and technical components into a highly functional system, ready for review.</p>
+            </div>
+            <div class="deliver">
+                <div class="heading">DELIVER</div>
+                <p>Review, refine, test and prepare final product for delivery. Launch and continue to evolve over time.</p>
+            </div>
+        </div>
+    </section>
 
-    <div><h2>Guaranteed Admissions: Your Pathway to Excellence</h2></div>
-
-    <article class=cc>
-        <section>
-            <img src="images/cs.jpg" />
-            <h3>Computer Science</h3>
-            <p>This and that and this</p>
-        </section>
-        <section>
-            <img src="images/accounting.jpg" />
-            <h3>Accounting</h3>
-            <p>This and that and this</p>
-        </section>
-        <section>
-            <img src="images/data.jpg" />
-            <h3>Data Analytics</h3>
-            <p>This and that and this </p>
-        </section>
-    </article>
-    <article class=dd>
-        <div><h2>Meet Our Alums</h2></div>
-        <section>
-            <img src="images/sama.jpg" />
-            <img src="images/sama.jpg" />
-            <img src="images/sama.jpg" />
-            <img src="images/sama.jpg" />
-        </section>
-        <section>
-            <img src="images/satu.jpg" />
-            <img src="images/satu.jpg" />
-            <img src="images/satu.jpg" />
-            <img src="images/satu.jpg" />
-        </section>
-    </article>
-    <article class=ee>
+    <section class="container ee">
         <div>
             <div>
                 <h2>Planning Your Admission: Timing Is Crucial</h2>
                 <p>Admissions are a thoughtful process that requires careful consideration. It's essential to plan ahead and submit your application in a timely manner. Taking the time to reflect on your choices and applying early can significantly enhance your chances of securing a spot at our esteemed institution.</p>
             </div>
-
             <button>Learn More</button>
         </div>
-    </article>
+    </section>
 
-    <article class="ff">
-        <div>
-            <h2>Why would you want to come to Augustana?</h2>
-        </div>
-        <div>
-            <section class="why-section">
-                <div class="hh">01.</div>
-                <div><h3>Sama</h3></div>
-                <p>Brightest students out there</p>
-            </section>
-            <section class="why-section">
-                <div class=hh>02.</div>
-                <div><h3>Osama</h3></div>
-                <p>Highest quality Green stuff</p>
-            </section>
-            <section class="why-section">
-                <div class=hh>03.</div>
-                <div><h3>Shaheer</h3></div>
-                <p>Confirmed sales position at Midwest Stores</p>
-            </section>
-        </div>
-    </article>
 
-    <article class="map">
-        <div>
-            <h2 class="contact-us">How to find us</h2>
-        </div>
-        <section>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1OUptA2GlyCAO5xUuU6cCTN8_ssI&hl=en&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-    </article>
+    <!-- about -->
+    <div class="about">
+        <a class="bg_links social portfolio" href="https://www.rafaelalucas.com/dailyui" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links logo"></a>
+    </div>
+    <!-- end about -->
+
+    <div class="wrapper">
+
+        <section class="module-team">
+
+            <div class="team">
+                <h2 class="title">Our Network of Alumni's</h2>
+                <div class="team-cards">
+
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper"></div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+    </div>
+
+
+
+
+    <div id="form">
+
+        <div class="fish" id="fish"></div>
+        <div class="fish" id="fish2"></div>
+
+        <form id="waterform" method="post">
+
+            <div class="formgroup" id="name-form">
+                <label for="name">Your name*</label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="formgroup" id="email-form">
+                <label for="email">Your e-mail*</label>
+                <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="formgroup" id="message-form">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <input type="submit" value="Send your message!" />
+        </form>
+    </div>
 
     <footer id="footer">
-            <p>&copy; 2023 All Rights Reserved. Terms of Use and Privacy Policy.</p>
+        <p>&copy; 2023 All Rights Reserved. Terms of Use and Privacy Policy.</p>
     </footer>
-
+    <script src="scripts/index.js"></script>
 </body>
+</html>
