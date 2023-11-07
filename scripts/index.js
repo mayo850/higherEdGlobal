@@ -231,3 +231,15 @@ window.addEventListener("load", event => {
 
     /* end */
 });
+
+
+const jobTitles = ["Engineer", "Artist", "Auditor"];
+const jobTitleElement = document.getElementById("job-title");
+let currentIndex = 0;
+
+function updateJobTitle() {
+    jobTitleElement.textContent = jobTitles[currentIndex];
+    currentIndex = (currentIndex + 1) % jobTitles.length;
+}
+
+setInterval(updateJobTitle, 2000); // Change job title every 2 seconds
