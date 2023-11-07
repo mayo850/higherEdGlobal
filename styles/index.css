@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     line-height: 1rem;
-    color: #000;
+    color: #fff;
     letter-spacing: 0.1px;
 }
 
@@ -58,7 +58,7 @@ main {
     background-attachment: fixed;
     font-weight: bold;
     opacity:0.8;
-    color:gold;
+    color:lightblue;
 }
 
     main header {
@@ -69,7 +69,7 @@ main {
     }
 
         main header div:nth-child(1) {
-            font-size: 20px;
+            font-size: 70px;
         }
 
         main header div:nth-child(2) {
@@ -189,7 +189,7 @@ div h2 {
     }
 
 .ee {
-    background: #F6C007;
+    background: linear-gradient(140deg, #363c42, #98d4f3);
     width: 100%;
     height: 310px;
 }
@@ -266,6 +266,7 @@ div h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background: linear-gradient(140deg, #363c42, #98d4f3);
     padding: 20px;
 }
 
@@ -274,8 +275,8 @@ div h2 {
     margin: 10px;
     width: 200px;
     height: 200px;
-    background-color: #fff;
-    color: #4b61c2;
+    background-color: transparent;
+    color: rgba(203, 213, 225, 1);
     padding: 20px;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -328,6 +329,11 @@ div h2 {
 
 
 /*  SPLIT VISION  */
+
+.grey {
+    background-color: #363c42;
+}
+
 .split-vision {
     overflow: hidden;
 }
@@ -723,3 +729,4 @@ label {
 .lblform{
     margin:10px 0px 10px -20px;
 }
+
