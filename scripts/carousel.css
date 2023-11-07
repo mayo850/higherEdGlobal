@@ -59,12 +59,6 @@
 .about .social.portfolio .icon {
   background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
 }
-.about .social.dribbble {
-  transition: all 0.3s ease;
-}
-.about .social.dribbble .icon {
-  background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
-}
 .about .social.linkedin {
   transition: all 0.8s ease;
 }

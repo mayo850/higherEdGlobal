@@ -41,84 +41,84 @@ $(document).ready(function () {
 
 window.addEventListener("load", event => {
 
-var swiperWrapper = document.querySelector('.swiper-wrapper');
+    var swiperWrapper = document.querySelector('.swiper-wrapper');
 
-/* The Team */
-var team = [{
-    name: "Haider Shah",
-    role: "Depaul University",
-    desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-    photo: "/images/Haider.jpg",
-    website: "https://www.izankhan.com",
-    email: "mailto:izankhan18@augustana.edu",
-    linkedin: "https://www.linkedin.com/in/izankhan",
-},
-{
-    name: "Hamza Khan",
-    role: "Western Illinois University",
-    desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-    photo: "/images/zeeshan.jpg",
-    website: "https://www.izankhan.com",
-    email: "mailto:izankhan18@augustana.edu",
-    linkedin: "https://www.linkedin.com/in/izankhan",
-},
-{
-    name: "Shayan Nadeem",
-    role: "Knox College",
-    desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-    photo: "/images/zeeshan.jpg",
-    website: "https://www.izankhan.com",
-    email: "mailto:izankhan18@augustana.edu",
-    linkedin: "https://www.linkedin.com/in/izankhan",
-},
-{
-    name: "Osama Mushtaq",
-    role: "Tryine University",
-    desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-    photo: "/images/zeeshan.jpg",
-    website: "https://www.izankhan.com",
-    email: "mailto:izankhan18@augustana.edu",
-    linkedin: "https://www.linkedin.com/in/izankhan",
-},
-{
-    name: "Shaheer Ahmad",
-    role: "Augustana College",
-    desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-    photo: "/images/zeeshan.jpg",
-    website: "https://www.izankhan.com",
-    email: "mailto:izankhan18@augustana.edu",
-    linkedin: "https://www.linkedin.com/in/izankhan",
-},
-];
+    /* The Team */
+    var team = [{
+        name: "Haider Shah",
+        role: "Depaul University",
+        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        photo: "/images/Haider.jpg",
+        website: "https://www.izankhan.com",
+        email: "mailto:izankhan18@augustana.edu",
+        linkedin: "https://www.linkedin.com/in/izankhan",
+    },
+    {
+        name: "Hamza Khan",
+        role: "Western Illinois University",
+        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        photo: "/images/zeeshan.jpg",
+        website: "https://www.izankhan.com",
+        email: "mailto:izankhan18@augustana.edu",
+        linkedin: "https://www.linkedin.com/in/izankhan",
+    },
+    {
+        name: "Shayan Nadeem",
+        role: "Knox College",
+        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        photo: "/images/zeeshan.jpg",
+        website: "https://www.izankhan.com",
+        email: "mailto:izankhan18@augustana.edu",
+        linkedin: "https://www.linkedin.com/in/izankhan",
+    },
+    {
+        name: "Osama Mushtaq",
+        role: "Tryine University",
+        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        photo: "/images/zeeshan.jpg",
+        website: "https://www.izankhan.com",
+        email: "mailto:izankhan18@augustana.edu",
+        linkedin: "https://www.linkedin.com/in/izankhan",
+    },
+    {
+        name: "Shaheer Ahmad",
+        role: "Augustana College",
+        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        photo: "/images/zeeshan.jpg",
+        website: "https://www.izankhan.com",
+        email: "mailto:izankhan18@augustana.edu",
+        linkedin: "https://www.linkedin.com/in/izankhan",
+    },
+    ];
 
-/* Social Icons */
-var icons = [{
-    iWebsite: "https://rafaelalucas.com/dailyui/6/assets/link.svg",
-    iEmail: "https://rafaelalucas.com/dailyui/6/assets/email.svg",
-    iLinkedin: "https://rafaelalucas.com/dailyui/6/assets/linkedin.svg",
-    iDribbble: "https://rafaelalucas.com/dailyui/6/assets/dribbble.svg",
-}];
+    /* Social Icons */
+    var icons = [{
+        iWebsite: "https://rafaelalucas.com/dailyui/6/assets/link.svg",
+        iEmail: "https://rafaelalucas.com/dailyui/6/assets/email.svg",
+        iLinkedin: "https://rafaelalucas.com/dailyui/6/assets/linkedin.svg",
+        iDribbble: "https://rafaelalucas.com/dailyui/6/assets/dribbble.svg",
+    }];
 
-var iWebsite = icons[0].iWebsite,
-    iEmail = icons[0].iEmail,
-    iLinkedin = icons[0].iLinkedin;
+    var iWebsite = icons[0].iWebsite,
+        iEmail = icons[0].iEmail,
+        iLinkedin = icons[0].iLinkedin;
 
 
-/* Function to populate the team members */
-function addTeam() {
-    for (let i = 0; i < team.length; i++) {
+    /* Function to populate the team members */
+    function addTeam() {
+        for (let i = 0; i < team.length; i++) {
 
-        /* Variables for the team */
-        var name = team[i].name,
-            role = team[i].role,
-            desc = team[i].desc,
-            photo = team[i].photo,
-            website = team[i].website,
-            email = team[i].email,
-            linkedin = team[i].linkedin;
+            /* Variables for the team */
+            var name = team[i].name,
+                role = team[i].role,
+                desc = team[i].desc,
+                photo = team[i].photo,
+                website = team[i].website,
+                email = team[i].email,
+                linkedin = team[i].linkedin;
 
-        /* Template for the Team Cards */
-        var template = `
+            /* Template for the Team Cards */
+            var template = `
                 <div class="swiper-slide">
                 <div class="card">
                     <span class="bg"></span>
@@ -141,92 +141,92 @@ function addTeam() {
                     </div>
                 </div>`;
 
-        swiperWrapper.insertAdjacentHTML('beforeend', template);
-    }
-};
+            swiperWrapper.insertAdjacentHTML('beforeend', template);
+        }
+    };
 
 
-addTeam();
+    addTeam();
 
 
 
-/* Swiper Settings */
+    /* Swiper Settings */
+    var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: false,
+        speed: 800,
+        slidesPerView: 3,
+        spaceBetween: 40,
 
-var mySwiper = new Swiper(".swiper-container", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    centeredSlides: false,
-    speed: 800,
-    slidesPerView: 3,
-    spaceBetween: 40,
-    threshold: 5,
-
-
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-        1180: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            centeredSlides: false,
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
         },
-        799: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
         },
+
+        // Responsive breakpoints
+        breakpoints: {
+            1180: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                centeredSlides: false,
+            },
+            799: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+                loop: true,
+            },
+        }
+    });
+
+
+    /* Show More */
+
+    var btnShow = document.querySelectorAll('.more');
+
+
+
+    btnShow.forEach(function (el) {
+        el.addEventListener('click', showMore);
+    });
+
+    function showMore(event) {
+        var card = event.target.closest(".swiper-slide");
+
+        if (card.classList.contains('show-more')) {
+            card.classList.remove('show-more');
+        } else {
+            card.classList.add('show-more')
+        }
+
     }
-});
-
-/* Show More */
-
-var btnShow = document.querySelectorAll('.more');
 
 
+    /* Social Hover */
+    var icon = document.querySelectorAll('.icon');
 
-btnShow.forEach(function (el) {
-    el.addEventListener('click', showMore);
-});
+    icon.forEach(function (el) {
+        el.addEventListener("mouseenter", followCursor);
 
-function showMore(event) {
-    var card = event.target.closest(".swiper-slide");
+    });
 
-    if (card.classList.contains('show-more')) {
-        card.classList.remove('show-more');
-    } else {
-        card.classList.add('show-more')
+
+    function followCursor(event) {
+        var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
+            index = event.currentTarget.dataset.index,
+            sizeIcon = (60 * index) + 25;
+
+        pointer.style.transform = `translateX(${sizeIcon}px)`;
     }
-
-}
-
-
-/* Social Hover */
-var icon = document.querySelectorAll('.icon');
-
-icon.forEach(function (el) {
-    el.addEventListener("mouseenter", followCursor);
-
-});
-
-
-function followCursor(event) {
-    var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
-        index = event.currentTarget.dataset.index,
-        sizeIcon = (60 * index) + 25;
-
-    pointer.style.transform = `translateX(${sizeIcon}px)`;
-}
 
 
     /* end */

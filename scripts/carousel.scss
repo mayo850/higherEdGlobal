@@ -66,14 +66,6 @@
             }
         }
 
-        &.dribbble {
-            transition: all 0.3s ease;
-
-            .icon {
-                background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
-            }
-        }
-
         &.linkedin {
             transition: all 0.8s ease;
 
@@ -253,7 +245,7 @@ body {
         }
 
         .team {
-            max-width: 1440px;
+            max-width: 80%;
             margin: 0 auto;
             padding: 100px 5%;
 
@@ -301,7 +293,6 @@ body {
 
             .team-cards {
                 position: relative;
-                display: flex;
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
