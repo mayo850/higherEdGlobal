@@ -34,6 +34,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.2rem;
     line-height: 3rem;
+    text-align:center;
 }
 
 h3 {
@@ -51,7 +52,7 @@ p {
 main {
     position: relative;
     height: 900px;
-    background: url(/images/Augustana.jpg), no-repeat;
+    background: url(/images/pencils.jpg), no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -87,8 +88,7 @@ main {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
 }
 
     .aa h2 {
@@ -97,41 +97,28 @@ main {
         margin-bottom: 20px;
     }
 
-.intro-para {
-    margin-bottom: 20px;
-}
-
-.aa p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.aa ul {
-    list-style: none;
-    padding: 0;
-}
-
-.aa li {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.aa a {
-    display: inline-block;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-    .aa a:hover {
-        background-color: #0056b3;
+    .aa p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px; /* Added margin-bottom for paragraphs */
     }
+
+    .aa a {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .aa a:hover {
+            background-color: #0056b3;
+        }
+
 
 
 .bb {
@@ -151,7 +138,7 @@ main {
     }
 
 div h2 {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -270,4 +257,466 @@ div h2 {
     padding: 10px 0;
     color: darkblue;
     font-weight: 700;
+}
+
+
+
+/* -------- Service SECTION ----------- */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+    .service h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+.service-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+    .service:hover .service-description {
+        opacity: 1;
+    }
+
+
+
+
+
+.container {
+    
+    padding: 20px; /* Optional: Add padding inside the container */
+}
+
+
+
+/*  SPLIT VISION  */
+.split-vision {
+    overflow: hidden;
+}
+
+    .split-vision .column .content {
+        max-width: 540px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+@media all and (min-width: 800px) {
+    .split-vision {
+        display: flex;
+        align-items: center;
+    }
+
+        .split-vision .column {
+            width: 50%;
+        }
+
+            .split-vision .column .content {
+                padding-right: 1em;
+                padding-left: 20%;
+                margin-right: -10%;
+            }
+}
+
+@media all and (min-width: 960px) {
+    .split-vision .column .content {
+        margin-right: 0;
+    }
+
+    .split-vision.reverse .column .content {
+        margin-left: 0;
+    }
+}
+
+
+/*  PROCESS  */
+.process {
+    width: 100%;
+    max-width: none;
+}
+
+    .process .discover,
+    .process .design,
+    .process .implement,
+    .process .develop,
+    .process .deliver {
+        opacity: 0.8;
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+        transition: opacity 0.25s;
+    }
+
+    .process.js-animate .discover,
+    .process.js-animate .design,
+    .process.js-animate .implement,
+    .process.js-animate .develop,
+    .process.js-animate .deliver {
+        animation: grow-up 1s forwards;
+    }
+
+    .process.js-animate .discover {
+        animation-delay: 0.25s;
+    }
+
+    .process.js-animate .design {
+        animation-delay: 0.5s;
+    }
+
+    .process.js-animate .implement {
+        animation-delay: 0.75s;
+    }
+
+    .process.js-animate .develop {
+        animation-delay: 1s;
+    }
+
+    .process.js-animate .deliver {
+        animation-delay: 1.25s;
+    }
+
+@keyframes grow-up {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50% {
+        transform: scaleY(1.1);
+    }
+
+    80%, 100% {
+        transform: scaleY(1);
+    }
+}
+
+.process-details {
+    max-width: 1440px;
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .process-details .discover,
+    .process-details .design,
+    .process-details .implement,
+    .process-details .develop,
+    .process-details .deliver {
+        max-width: 480px;
+        padding: 1em 0;
+        margin-right: auto;
+        margin-left: auto;
+        transition: opacity 0.25s;
+    }
+
+        .process-details .discover .heading,
+        .process-details .design .heading,
+        .process-details .implement .heading,
+        .process-details .develop .heading,
+        .process-details .deliver .heading {
+            font-weight: 700;
+        }
+
+            .process-details .discover .heading::after,
+            .process-details .design .heading::after,
+            .process-details .implement .heading::after,
+            .process-details .develop .heading::after,
+            .process-details .deliver .heading::after {
+                width: 40px;
+                height: 4px;
+                margin-top: 0.25em;
+                display: block;
+                content: '';
+            }
+
+            .process-details .discover .heading::after {
+                background: #50b1aa;
+            }
+
+            .process-details .design .heading::after {
+                background: #f57a73;
+            }
+
+            .process-details .implement .heading::after {
+                background: #ffb566;
+            }
+
+            .process-details .develop .heading::after {
+                background: #43c0e6;
+            }
+
+            .process-details .deliver .heading::after {
+                background: #60666a;
+            }
+
+@media all and (min-width: 800px) {
+    .process-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .process-details .discover,
+        .process-details .design,
+        .process-details .implement,
+        .process-details .develop,
+        .process-details .deliver {
+            width: 50%;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+        .process-details .discover {
+            order: 1;
+        }
+
+        .process-details .design {
+            margin-right: 0;
+            order: 4;
+        }
+
+        .process-details .implement {
+            order: 2;
+        }
+
+        .process-details .develop {
+            margin-left: 0;
+            order: 5;
+        }
+
+        .process-details .deliver {
+            order: 3;
+        }
+}
+
+@media all and (min-width: 800px) {
+    .process-details .discover,
+    .process-details .design,
+    .process-details .implement,
+    .process-details .develop,
+    .process-details .deliver {
+        width: 33.3334%;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .process-details .discover,
+    .process-details .design,
+    .process-details .implement,
+    .process-details .develop,
+    .process-details .deliver {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+
+
+
+
+/* CSS for contact us section */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+
+
+
+/* Animation webkit */
+@-webkit-keyframes myfirst {
+    0% {
+        margin-left: -235px
+    }
+
+    90% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* Animation */
+@keyframes myfirst {
+    0% {
+        margin-left: -235px
+    }
+
+    70% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.fish {
+    background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+    width: 235px;
+    height: 104px;
+    margin-left: -235px;
+    position: absolute;
+    animation: myfirst 24s;
+    -webkit-animation: myfirst 24s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+#fish {
+    top: 120px;
+}
+
+#fish2 {
+    top: 260px;
+    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+}
+
+/*
+header {
+    height: 160px;
+    background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+}*/
+
+#form {
+    height: 100%;
+    background-color: #98d4f3;
+    overflow: hidden;
+    position: relative;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 40px;
+    color: white;
+    position: relative;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+input, textarea {
+    width: 500px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+    font-size: 1em;
+    color: #676767;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    border: solid 3px #98d4f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    input:focus, textarea:focus {
+        border: solid 3px #77bde0;
+    }
+
+textarea {
+    height: 100px;
+    resize: none;
+    overflow: auto;
+}
+
+input[type="submit"] {
+    background-color: #F90;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.29em;
+    font-family: 'Sniglet', cursive;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+    input[type="submit"]:hover {
+        background-color: #e58f0e;
+    }
+
+label {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.formgroup, .formgroup-active, .formgroup-error {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 10.5%;
+    transition: background-image 0.7s;
+    -webkit-transition: background-image 0.7s;
+    -moz-transition: background-image 0.7s;
+    -o-transition: background-image 0.7s;
+    width: 566px;
+    padding-top: 2px;
+}
+
+.formgroup {
+    background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');
+}
+
+.formgroup-active {
+    background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+
+.formgroup-error {
+    background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+    color: red;
 }
