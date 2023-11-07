@@ -264,9 +264,8 @@ div h2 {
 /* -------- Service SECTION ----------- */
 .services-section {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -275,13 +274,13 @@ div h2 {
     margin: 10px;
     width: 200px;
     height: 200px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #fff;
+    color: #4b61c2;
     padding: 20px;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
     .service h3 {
@@ -301,7 +300,6 @@ div h2 {
     border-radius: 10px;
     transition: opacity 0.3s ease;
     opacity: 0;
-    pointer-events: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,6 +314,7 @@ div h2 {
     .service:hover .service-description {
         opacity: 1;
     }
+
 
 
 
@@ -719,4 +718,8 @@ label {
 .formgroup-error {
     background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
     color: red;
+}
+
+.lblform{
+    margin:10px 0px 10px -20px;
 }
