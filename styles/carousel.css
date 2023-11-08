@@ -200,7 +200,7 @@ body {
 }
 .wrapper .module-team .team .title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 80px !important;
   color: #6F7073;
   font-size: 44px;
   line-height: normal;

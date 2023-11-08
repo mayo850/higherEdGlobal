@@ -52,35 +52,35 @@ p {
 main {
     position: relative;
     height: 100vh;
-    background: url(/images/pencils.jpg), no-repeat;
+    background: url(/images/pencils.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     font-weight: bold;
-    opacity:0.8;
-    color:lightblue;
+    opacity: 0.8;
+    color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
     main header {
-        position: absolute;
-        top: 300px;
-        left: 200px;
         line-height: 5rem;
+        text-align: center;
     }
 
-        main header div:nth-child(1) {
-            font-size: 70px;
-        }
-
+        main header div:nth-child(1),
         main header div:nth-child(2) {
             font-size: 70px;
-            line-height: 4rem;
+            line-height: 1; /* Reset line-height */
         }
 
     main button:hover {
         background: #999;
         cursor: pointer;
     }
+
 
 .aa {
     margin: 0 auto;
@@ -194,7 +194,7 @@ div h2 {
 }
 
     .ee div {
-        width: 1000px;
+        width: 100%;
         line-height: 5rem;
         margin: 0 auto;
         text-align: center;
@@ -634,9 +634,9 @@ header {
 
 form {
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
     padding-top: 40px;
-    color: white;
+    color: #363c42;
     position: relative;
 }
 
@@ -645,7 +645,7 @@ label, input, textarea {
 }
 
 input, textarea {
-    width: 500px;
+    width: 100%;
     border: none;
     border-radius: 20px;
     outline: none;
@@ -685,6 +685,8 @@ input[type="submit"] {
     -moz-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
+    width: 300px;
+    margin: 10px auto;
 }
 
     input[type="submit"]:hover {
@@ -705,8 +707,9 @@ label {
     -webkit-transition: background-image 0.7s;
     -moz-transition: background-image 0.7s;
     -o-transition: background-image 0.7s;
-    width: 566px;
+    width: 60%;
     padding-top: 2px;
+    margin: 0 auto;
 }
 
 .formgroup {
@@ -725,5 +728,24 @@ label {
 .lblform{
     margin:10px 0px 10px -20px;
 }
+
+
+/* iPhone X/XS/11 Pro */
+@media only screen and (max-width: 375px) and (min-height: 812px) {
+    /* styles for iPhone X/XS/11 Pro */
+    main header {
+        position: absolute;
+        line-height: 5rem !important;
+    }
+        main header div:nth-child(1) {
+            font-size: 55px !important;
+        }
+
+        main header div:nth-child(2) {
+            font-size: 55px !important;
+        }
+
+}
+
 
 
