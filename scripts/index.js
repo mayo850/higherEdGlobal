@@ -152,24 +152,19 @@ window.addEventListener("load", event => {
 
     /* Swiper Settings */
     var mySwiper = new Swiper(".swiper-container", {
-        // Optional parameters
+        // General parameters
         direction: "horizontal",
-        loop: true,
-        centeredSlides: false,
         speed: 800,
-        slidesPerView: 3,
+        centeredSlides: false,
+        centeredSlides: false, // Allow free dragging
+        pagination: false, // Disable pagination
         spaceBetween: 40,
-
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
+        grabCursor: true, // Show grab cursor while dragging
 
         // Navigation arrows
         navigation: {
             nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            prevEl: ".swiper-button-prev",
         },
 
         // Responsive breakpoints
@@ -177,16 +172,22 @@ window.addEventListener("load", event => {
             1180: {
                 slidesPerView: 2,
                 spaceBetween: 40,
-                centeredSlides: false,
+                centeredSlides: true,
             },
             799: {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 spaceBetween: 20,
-                centeredSlides: true,
-                loop: true,
+                centeredSlides: false, // Allow free dragging
+                centeredSlidesBounds: true,
+                autoHeight: true,
+                touchRatio: 0.8,
+                slideToClickedSlide: true,
+                pagination: false, // Disable pagination
+                dynamicBullets: false,
             },
-        }
+        },
     });
+
 
 
     /* Show More */
