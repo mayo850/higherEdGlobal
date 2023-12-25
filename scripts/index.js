@@ -47,47 +47,32 @@ window.addEventListener("load", event => {
     var team = [{
         name: "Haider Shah",
         role: "Depaul University",
-        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        desc: "Originally from Pakistan, pursued his dream of studying business analytics in the United States with our support. After successfully completing his Master's at DePaul University, he seamlessly transitioned into the professional world. Haider is now thriving in his career at Deloitte, showcasing both his educational achievements and professional dedication.",
         photo: "/images/Haider.jpg",
-        website: "https://www.izankhan.com",
-        email: "mailto:izankhan18@augustana.edu",
-        linkedin: "https://www.linkedin.com/in/izankhan",
     },
     {
-        name: "Hamza Khan",
-        role: "Western Illinois University",
-        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        name: "Zeeshan Ali",
+        role: "Augustana College",
+        desc: "Zeeshan Ali, originally from Chitral, Pakistan, received valuable support from HigherEd Global to pursue his academic aspirations at Augustana College, where he majored in Accounting and Finance. Zeeshan's commitment to practical learning is demonstrated through internships at UP Key and the YMCA. Today, he stands as an Audit and Assurance Senior at Deloitte, showcasing a seamless blend of academic excellence and professional success.",
         photo: "/images/zeeshan.jpg",
-        website: "https://www.izankhan.com",
-        email: "mailto:izankhan18@augustana.edu",
-        linkedin: "https://www.linkedin.com/in/izankhan",
     },
     {
         name: "Shayan Nadeem",
         role: "Knox College",
-        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-        photo: "/images/zeeshan.jpg",
-        website: "https://www.izankhan.com",
-        email: "mailto:izankhan18@augustana.edu",
-        linkedin: "https://www.linkedin.com/in/izankhan",
+        desc: "Shayan Nadeem, originally from Lahore, Pakistan, found educational support through HigherEd Global to pursue his passion at Knox College. Majoring in Education, Shayan's commitment to his field is evident in his current role as an Archives Assistant at Knox College. His journey reflects a seamless transition from academic pursuit to a meaningful professional role, showcasing his dedication and expertise in the field of education.",
+        photo: "/images/shayaan.jpg",
     },
     {
         name: "Osama Mushtaq",
         role: "Tryine University",
-        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-        photo: "/images/zeeshan.jpg",
-        website: "https://www.izankhan.com",
-        email: "mailto:izankhan18@augustana.edu",
-        linkedin: "https://www.linkedin.com/in/izankhan",
+        desc: "Osama Mushtaq, originally from Peshawar, Pakistan, pursued his MS in Business Analytics at Trine University with the assistance of HigherEd Global. With prior experience as an Accounting Intern at Boost Mobile, he now excels in his role as an Audit & Assurance Senior Assistant at Deloitte, showcasing a seamless integration of academic and professional achievements.",
+        photo: "/images/osama.jpg",
     },
     {
         name: "Shaheer Ahmad",
         role: "Augustana College",
-        desc: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
-        photo: "/images/zeeshan.jpg",
-        website: "https://www.izankhan.com",
-        email: "mailto:izankhan18@augustana.edu",
-        linkedin: "https://www.linkedin.com/in/izankhan",
+        desc: "Shaheer Ahmed, originally from Kashmir, Pakistan, pursued a BBA with a focus on Accounting and Data Analytics at Augustana College with the support of HigherEd Global. With a background as an Internal Audit Intern at Royal Neighbors of America, Shaheer now thrives as Assurance Staff at EY, demonstrating a seamless integration of academic knowledge and professional success.",
+        photo: "/images/shaheer.jpg",
     },
     ];
 
@@ -254,3 +239,35 @@ function updateJobTitle() {
 
 setInterval(updateJobTitle, 2000); // Change job title and color every 2 seconds
 
+function smoothScroll(target) {
+    var targetElement = document.querySelector(target);
+
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+//var services = document.querySelectorAll('.service');
+
+//// Function to show each service one by one
+//function showServices(index) {
+//    if (index < services.length) {
+//        services[index].style.opacity = '1';
+//        setTimeout(function () {
+//            showServices(index + 1);
+//        }, 500); // Adjust the delay time (in milliseconds) between each section
+//    }
+//}
+
+//// Initially hide all services
+//services.forEach(function (service) {
+//    service.style.opacity = '0';
+//});
+
+//// Trigger the function to show services when the page is loaded
+//document.addEventListener('DOMContentLoaded', function () {
+//    showServices(0);
+//});
