@@ -15,13 +15,13 @@
 <body>
     <main>
         <header class="mobile-header">
-            <div>
+            <div class="main-text">
                 Hello, Future
                 <br />
                 <span id="job-title"></span>
                 <br />
             </div>
-            <div>
+            <div class="main-text">
                 Nice to meet you. We are <span style="font-weight: bold; color: #FF0000;">HigherEd Global</span>
             </div>
             <button onclick="smoothScroll('#contact')" class="actionButton">Take the first Step</button>
@@ -29,9 +29,9 @@
     </main>
 
 
-    <section class="container aa">
+    <!--<section class="container aa">
         <div>
-           
+
         </div>
         <div>
             <h2>What can we do for you?</h2>
@@ -41,9 +41,9 @@
             </p>
             <p>Choose us because we believe in nurturing talents, empowering minds, and shaping futures. With Sama Jee leading the way, our commitment to excellence knows no bounds.</p>
         </div>
-    </section>
+    </section>-->
 
-    
+
     <section class="section grey">
         <div>
             <h2>How does it actually work?</h2>
@@ -61,7 +61,7 @@
         <div class="process-details">
             <div class="discover">
                 <div class="heading">Meet with Us</div>
-                <p>1-on-1 counselor consultations includes discussing career choices and undergraduate programs. A tailored experience for you.</p>
+                <p>1-on-1 counselor consultations to discuss career choices and undergraduate programs. Attend our webinars to gain insights from experienced college admissions professionals about crafting a standout application and much more!</p>
             </div>
             <div class="design">
                 <div class="heading">Opportunity</div>
@@ -88,7 +88,7 @@
                 <h2>Planning Your Admission: Timing Is Crucial</h2>
                 <p>
                     Embark on a personalized academic journey tailored just for you! Our 1-on-1 counselor consultations are your gateway to discovering universities that perfectly match your dreams, capabilities, and budget. No more headaches with applications—we've got you covered! From tackling admission questions to navigating visas and fees, we'll handle it all. Get ready for exams like TOEFL, IELTS, SAT with our seamless preparation support.
-                    </p>
+                </p>
                 <p>
                     The best part? You'll receive acceptance letters based on your unique criteria, guided by our experienced team for completely free of charge. But that's not all! Join our exclusive webinars led by admissions pros to uncover the secrets of crafting standout applications. Your dream of studying abroad is more achievable than ever with our personalized, human touch every step of the way.
                 </p>
@@ -138,20 +138,18 @@
 
     <section class="container" id="contact">
         <div id="form">
-
             <div class="fish" id="fish"></div>
             <div class="fish" id="fish2"></div>
 
-            <form id="waterform" method="post">
-
+            <form id="waterform" action="sendmail.php" method="post">
                 <div class="formgroup" id="name-form">
                     <label class="lblform" for="name">Your name*</label>
-                    <input type="text" id="name" name="name" />
+                    <input type="text" id="name" name="name" required />
                 </div>
 
                 <div class="formgroup" id="email-form">
                     <label class="lblform" for="email">Your e-mail*</label>
-                    <input type="email" id="email" name="email" />
+                    <input type="email" id="email" name="email" required />
                 </div>
 
                 <div class="formgroup" id="message-form">
@@ -163,6 +161,7 @@
             </form>
         </div>
     </section>
+
     <script src="scripts/index.js"></script>
 </body>
 </html>
