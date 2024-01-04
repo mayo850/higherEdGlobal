@@ -13,6 +13,7 @@ body {
     line-height: 1rem;
     color: #fff;
     letter-spacing: 0.1px;
+    background: linear-gradient(140deg, #363c42, #98d4f3) !important;
 }
 
 .main-text {
@@ -194,7 +195,7 @@ div h2 {
 .ee {
     background: linear-gradient(140deg, #363c42, #98d4f3);
     width: 100%;
-    height: 310px;
+    height: auto !important;
 }
 
     .ee div {
@@ -790,6 +791,6 @@ label {
 }
 
 #job-title {
-    font-size: 2em;
+    font-size: 1em;
     animation: verticalCarousel 3s infinite; /* Adjust the animation duration as needed */
 }
