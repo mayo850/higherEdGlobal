@@ -15,6 +15,10 @@ body {
     letter-spacing: 0.1px;
 }
 
+.main-text {
+    color:rgb(65 0 255);
+}
+
 .actionButton {
     color: #000;
     font-weight: bold;
@@ -767,3 +771,25 @@ label {
 
 
 
+/* Add CSS animation for smooth vertical transition */
+@keyframes verticalCarousel {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+#job-title {
+    font-size: 2em;
+    animation: verticalCarousel 3s infinite; /* Adjust the animation duration as needed */
+}
