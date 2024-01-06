@@ -173,7 +173,7 @@ body {
 
 .wrapper .module-team {
     position: relative;
-    background-color: #363c42;
+    background: linear-gradient(140deg, #363c42, #98d4f3) !important;
 }
 .wrapper .module-team:before {
   width: 100%;
@@ -201,7 +201,7 @@ body {
 .wrapper .module-team .team .title {
   text-align: center;
   margin-bottom: 80px !important;
-  color: #6F7073;
+  color: #fff;
   font-size: 44px;
   line-height: normal;
   text-transform: uppercase;

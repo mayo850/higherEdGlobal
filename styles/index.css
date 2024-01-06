@@ -574,19 +574,8 @@ div h2 {
     }
 }
 
-
-
-
-
 /* CSS for contact us section */
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
-
-
-
-
 
 /* Animation webkit */
 @-webkit-keyframes myfirst {
@@ -771,7 +760,6 @@ label {
 }
 
 
-
 /* Add CSS animation for smooth vertical transition */
 @keyframes verticalCarousel {
     0% {
@@ -793,4 +781,8 @@ label {
 #job-title {
     font-size: 1em;
     animation: verticalCarousel 3s infinite; /* Adjust the animation duration as needed */
+}
+
+.contact{
+    height:1200px !important;
 }
